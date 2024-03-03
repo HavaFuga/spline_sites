@@ -1,0 +1,18 @@
+---
+import SplineApp from "../components/SplineApp.astro";
+interface Props {
+    navigationUrl: string;
+	url: string;
+}
+
+const { navigationUrl, url } = Astro.props;
+---
+<article>
+    <a
+        href={`/${navigationUrl}`}
+        aria-label={`Read more about ${navigationUrl}`}
+    >
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.55/build/spline-viewer.js"></script>
+        <spline-viewer loading-anim-type="none" url=`https://prod.spline.design/${url}/scene.splinecode`></spline-viewer>
+    </a>
+</article>

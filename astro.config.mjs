@@ -1,4 +1,6 @@
 import { defineConfig } from 'astro/config';
+import { Application } from '@splinetool/runtime';
+
 
 import tailwind from "@astrojs/tailwind";
 

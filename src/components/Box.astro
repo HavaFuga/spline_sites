@@ -1,0 +1,50 @@
+---
+import Site from "./Site.astro";
+
+
+---
+<div class="grid grid-cols-3 grid-cols-3 self-center flex gap-x-16 gap-y-32 max-md:grid-cols-1 max-sm:gap-y-14">
+<div
+    class="rainbow-box  border-white"
+>
+    <Site navigationUrl="feeling-blue" url="4op0IBW7otm85rY8"/>
+</div>
+
+<div
+    class="rainbow-box  border-white"
+>
+    <Site navigationUrl="my-room" url="w7KMWobksxiPg9mk"/>
+</div>
+
+<div
+    class="rainbow-box border-white"
+>
+    <Site navigationUrl="waves" url="ePInxNfMFKervs0s"/>
+</div>
+</div>
+
+
+<style>
+    .rainbow-box:hover {
+        animation: animateGradient 2s linear infinite;
+    }
+
+    @keyframes animateGradient {
+        0%, 100% {
+            border-image: radial-gradient(circle at top left, violet, indigo, blue, green, yellow, orange, red);
+            border-image-slice: 1;
+        }
+        25% {
+            border-image: radial-gradient(circle at top left, red, violet, indigo, blue, green, yellow, orange);
+            border-image-slice: 1;
+        }
+        50% {
+            border-image: radial-gradient(circle at top left, orange, red, violet, indigo, blue, green, yellow);
+            border-image-slice: 1;
+        }
+        75% {
+            border-image: radial-gradient(circle at top left, yellow, orange, red, violet, indigo, blue, green);
+            border-image-slice: 1;
+        }
+    }
+  </style>

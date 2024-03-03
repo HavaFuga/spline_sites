@@ -1,0 +1,9 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Box from "../components/Box.astro";
+---
+
+<Layout title="Overview Projects">
+	<script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.55/build/spline-viewer.js"></script>
+    <spline-viewer class="h-screen" loading-anim-type="none" url="https://prod.spline.design/ePInxNfMFKervs0s/scene.splinecode"></spline-viewer>
+</Layout>
